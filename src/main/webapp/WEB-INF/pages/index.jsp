@@ -8,6 +8,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<!-- images -->
+<spring:url value="/resources/images/genesys-logo.png" var="logo" />
+
 <!-- Css paths -->
 <spring:url value="/resources/css/node_modules/todomvc-app-css/index.css" var="indexCss" />
 <spring:url value="/resources/css/node_modules/todomvc-common/base.css" var="baseCss" />
@@ -42,7 +45,7 @@
     <script type="text/ng-template" id="todomvc-index.html">
         <section id="todoapp">
             <header id="header">
-                <h1>todos</h1>
+                <h1>Todos for <img src="${logo}" /></h1>
                 <form id="todo-form" ng-submit="addTodo()">
                     <input id="new-todo" placeholder="What needs to be done?" ng-model="newTodo" ng-disabled="saving" autofocus>
                 </form>

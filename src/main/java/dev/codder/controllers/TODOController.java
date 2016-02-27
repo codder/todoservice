@@ -29,7 +29,7 @@ public class TODOController {
     }
 
 
-    @RequestMapping(value = "/todos", method = RequestMethod.GET)
+    @RequestMapping(value = "/todos", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TODOModel>> listAllTasks() {
         List<TODOModel> tasks = todoService.getAll();
         if(tasks.isEmpty()){

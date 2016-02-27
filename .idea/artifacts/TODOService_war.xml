@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TODOService:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="TODOService.war">
+      <element id="artifact" artifact-name="TODOService:war exploded" />
+    </root>
+  </artifact>
+</component>
